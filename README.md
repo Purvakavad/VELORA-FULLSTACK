@@ -68,10 +68,10 @@ VELORA/
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](Screenshots/Home.png)
+![Home](screenshots/Home.png)
 
 ### 👗 Products
-![Products](screenshots/ListProducts.png)
+![Products](screenshots/Collections.png)
 
 ### 📄 Product Details
 ![Product Details](screenshots/Singleproduct.png)
@@ -83,13 +83,13 @@ VELORA/
 ![Orders](screenshots/Order.png)
 
 ### 🔐 Admin Dashboard
-![Admin](screenshots/Addproduct.png)
+![Admin](screenshots/Admin.png)
 
 ###  MANAGE STATUS
-![Admin](screenshots/ManageOrder.png)
+![Admin](screenshots/Adminorder.png)
 
 ### MOBILE VIEW
-![Admin](screenshots/MobileView.png)
+![Admin](screenshots/Mobileview.png)
 ---
 
 ## 🌐 Live Demo
