@@ -1,0 +1,368 @@
+.Add_Page {
+    margin: 40px 40px;
+    width: 50%;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.upload_imgs {
+    display: flex;
+    gap: 10px;
+}
+
+.upload_imgs img,
+.upload_imgs input {
+    width: 140px;
+}
+
+
+.product_name,
+.product_des {
+    font-size: 1.2rem;
+
+}
+
+.product_name input,
+.product_des textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 8px 0 8px 10px;
+}
+
+.product_name p,
+.product_des p {
+    margin-bottom: 5px;
+}
+
+
+.product_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    gap: 20px;
+
+}
+
+.category_select,
+.sub_category_select,
+.price_input {
+    font-size: 1.1rem;
+    padding: 8px 0 8px 10px;
+}
+
+.product_info p {
+    margin-bottom: 5px;
+}
+
+.sizes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.size {
+    font-size: 1.1rem;
+    background-color: rgb(213, 231, 247);
+
+    padding: 5px 14px;
+    cursor: pointer;
+}
+
+.product_size p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.bestseller {
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+
+
+.add_product button {
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.back_clr {
+    background-color: rgb(219, 171, 171);
+}
+
+
+@media screen and (max-width:992px) {
+    .Add_Page {
+        margin: 35px 0;
+        width: 100%;
+    }
+
+    .add {
+        width: 100%;
+    }
+
+    .add h2 {
+        font-size: 2.3rem;
+    }
+
+    .product_name {
+        width: 100%;
+    }
+
+    .product_info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        font-size: 2.3rem;
+    }
+
+    .price input,
+    .sub_category_select,
+    .category_select {
+        width: 100%;
+        font-size: 2.3rem;
+    }
+
+    .product_name,
+    .product_des {
+        font-size: 2.3rem;
+    }
+
+    .product_name input,
+    .product_des textarea {
+        font-size: 2.3rem;
+    }
+
+    .product_size p,
+    .size {
+        font-size: 2.3rem;
+    }
+
+    .bestseller {
+        font-size: 1.9rem;
+    }
+
+    .add_product button {
+        font-size: 2.3rem;
+        padding:
+            8px 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Add_Page {
+        margin: 35px 0;
+        width: 100%;
+    }
+
+    .add {
+        width: 100%;
+    }
+
+    .add h2 {
+        font-size: 2.3rem;
+    }
+
+    .product_name {
+        width: 100%;
+    }
+
+    .product_info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        font-size: 2.3rem;
+    }
+
+    .price input,
+    .sub_category_select,
+    .category_select {
+        width: 100%;
+        font-size: 2.3rem;
+    }
+
+    .product_name,
+    .product_des {
+        font-size: 2.3rem;
+    }
+
+    .product_name input,
+    .product_des textarea {
+        font-size: 2.3rem;
+    }
+
+    .product_size p,
+    .size {
+        font-size: 2.3rem;
+    }
+
+    .bestseller {
+        font-size: 1.9rem;
+    }
+
+    .add_product button {
+        font-size: 2.3rem;
+        padding:
+            8px 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .Add_Page {
+        margin: 35px 0;
+        width: 100%;
+    }
+
+    .add {
+        width: 100%;
+    }
+
+    .upload_imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .product_name {
+        width: 100%;
+    }
+
+    .product_info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+    .product_category p,
+    .sub_category p,
+    .price p {
+        font-size: 1.5rem;
+    }
+
+    .price input,
+    .sub_category_select,
+    .category_select {
+        width: 100%;
+        font-size: 1.6rem
+    }
+
+    .product_name,
+    .product_des {
+        font-size: 1.6rem;
+    }
+
+    .product_name input,
+    .product_des textarea {
+        font-size: 1.6rem
+    }
+
+    .product_size p,
+    .size {
+        font-size: 1.6rem;
+    }
+
+    .bestseller {
+        font-size: 1.4rem;
+    }
+
+    .add_product button {
+        font-size: 1.8rem;
+        padding:
+            8px 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .Add_Page {
+        margin: 35px 0;
+        width: 70%;
+    }
+
+    .add {
+        width: 100%;
+    }
+
+    .upload_imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .product_name {
+        width: 100%;
+    }
+
+    .product_info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+
+    .product_name,
+    .product_des {
+        font-size: 1.4rem;
+    }
+
+    .product_name input,
+    .product_des textarea {
+        font-size: 1.4rem
+    }
+
+    .product_size p,
+    .size {
+        font-size: 1.4rem;
+    }
+
+    .bestseller {
+        font-size: 1.4rem;
+    }
+
+    .add_product button {
+        font-size: 1.6rem;
+        padding:
+            8px 40px;
+    }
+
+
+    .product_info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .sub_category,
+    .product_category,
+    .price {
+        font-size: 1.4rem
+    }
+
+    .sub_category_select,
+    .price input,
+    .category_select {
+        font-size: 1.4rem;
+    }
+
+    .size {
+        font-size: 1.1rem;
+    }
+
+
+
+}

@@ -1,0 +1,150 @@
+.listPage {
+    margin: 40px 0 40px 20px;
+}
+
+.all_product_title {
+    margin-bottom: 10px;
+}
+
+.table_heade,
+.product {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr 1fr;
+    border: 2px solid gray;
+    align-items: center;
+}
+
+.table_heade {
+
+    background-color: rgb(207, 207, 239);
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+.product {
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.product_img {
+    width: 100px;
+    height: auto;
+}
+
+.action {
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .product {
+        gap: 12px;
+    }
+
+    .product_img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .product_img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .actions {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .products {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .table_heade {
+        display: none;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 70px 1fr auto;
+        align-items: center;
+        column-gap: 12px;
+        row-gap: 6px;
+        text-align: left;
+    }
+
+    .product_img {
+        width: 70px;
+        height: 70px;
+        grid-row: 1 / span 3;
+    }
+
+    .name {
+        font-weight: 600;
+    }
+
+    .category {
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .price {
+        font-weight: 600;
+    }
+
+    .actions {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .product {
+        grid-template-columns: 180px 1fr;
+    }
+
+    .product_img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .table_heade {
+        display: none;
+    }
+
+    .actions {
+        grid-column: 2;
+        justify-content: flex-end;
+        margin-top: 8px;
+    }
+
+    .name,
+    .category,
+    .price {
+        font-size: 0.85rem;
+    }
+}

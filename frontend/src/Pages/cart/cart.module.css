@@ -1,0 +1,178 @@
+.cartpage {
+    width: 80vw;
+    margin: 12vh auto;
+    /* min-height: calc(100vh-20vh); */
+    min-height: calc(100vh - 350px);
+}
+
+
+
+.cart_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+
+.product {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 300px;
+}
+
+
+.cart_img {
+    width: 150px;
+    height: 150px;
+}
+
+.information {
+    font-size: 1.2rem;
+}
+
+.detail {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.detail button {
+    padding: 0 15px;
+    font-size: 1.2rem;
+
+}
+
+.qty_input {
+    width: 100px;
+    padding: 5px;
+    font-size: 1.2rem;
+
+}
+
+.delete_icon {
+    height: 30px;
+}
+
+.checkoutBtn {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkoutBtn button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.checkoutBtn button:hover {
+    background-color: rgb(50, 49, 49);
+    transform: scale(1.02);
+}
+
+.del_icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cartpage {
+        width: 90%;
+        margin: 12vh auto;
+    }
+
+
+    .product {
+        gap: 15px;
+    }
+
+
+    .del_icon {
+        display: none;
+    }
+
+
+    .cart_img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .information {
+        font-size: 1rem;
+    }
+
+    .detail {
+        width: 100%;
+
+        gap: 20px;
+    }
+
+
+
+    .checkoutBtn button {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cartpage {
+        width: 90%;
+        margin: 12vh auto;
+    }
+
+    .cart_info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .product {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .delete_qty {
+        display: none;
+    }
+
+    .del_icon {
+        display: block;
+        height: 30px;
+    }
+
+    .update_qty {
+        display: flex;
+
+        gap: 25px;
+    }
+
+    .cart_img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .information {
+        font-size: 1rem;
+    }
+
+    .detail {
+        width: 100%;
+        /* justify-content: space-between;
+        flex-wrap: wrap; */
+        gap: 20px;
+    }
+
+    .checkoutBtn {
+        text-align: center;
+    }
+
+    .checkoutBtn button {
+        width: 100%;
+    }
+}

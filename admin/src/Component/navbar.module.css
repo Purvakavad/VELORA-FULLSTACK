@@ -1,0 +1,50 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 80vw;
+    margin: auto;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.logo a {
+    font-size: 2rem;
+    letter-spacing: 1.1;
+    text-decoration: none;
+    color: black;
+}
+
+.admin {
+    color: rgb(240, 154, 168);
+}
+
+.adminLogo {
+    height: 80%;
+}
+
+.logoutBtn button {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.logoutBtn button:hover {
+    background-color: rgb(93, 91, 91);
+    transform: scale(1.05);
+}

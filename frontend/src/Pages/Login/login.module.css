@@ -1,0 +1,235 @@
+.login_page {
+    width: 80vw;
+    margin: 12vh auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.login_form {
+    width: 40%;
+    height: auto;
+
+    margin: auto;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login_form form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 0 8px 10px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+.password {
+
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+
+.password a {
+    color: black;
+    text-decoration: none;
+}
+
+.formSubmitBtn {
+    margin: auto;
+}
+
+
+form button {
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.user {
+    text-align: center;
+
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.user:hover,
+.password:hover {
+    color: blue;
+}
+
+@media screen and (max-width:1200px) {
+    .login_form {
+        width: 100vw;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    }
+
+    .login_form form input {
+        padding: 12px 0 12px 10px;
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-top: 12px;
+    }
+
+    .title h2 {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    form button {
+        padding: 10px 50px;
+        margin: 30px 0 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .password,
+    .user {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+@media screen and (max-width:992px) {
+    .login_form {
+        width: 100vw;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    }
+
+    .login_form form input {
+        padding: 12px 0 12px 10px;
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-top: 12px;
+    }
+
+    .title h2 {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    form button {
+        padding: 10px 50px;
+        margin: 30px 0 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .password,
+    .user {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .login_form {
+        width: 100vw;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    }
+
+    .login_form form input {
+        padding: 12px 0 12px 10px;
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-top: 12px;
+    }
+
+    .title h2 {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    form button {
+        padding: 10px 50px;
+        margin: 30px 0 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .password,
+    .user {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .login_form {
+        width: 100vw;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    }
+
+    .login_form form input {
+        padding: 12px 0 12px 10px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        margin-top: 12px;
+    }
+
+    .title h2 {
+        font-size: 2.1rem;
+        margin-bottom: 0;
+    }
+
+    form button {
+        padding: 10px 50px;
+        margin: 30px 0 10px 0;
+        font-size: 1.5rem;
+    }
+
+    .password,
+    .user {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .login_form {
+        width: 80vw;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+    }
+
+    .login_form form input {
+        padding: 10px 0 10px 8px;
+        font-size: 1.2rem;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+    }
+
+    form button {
+        margin: 15px 0 10px 0;
+    }
+
+
+}

@@ -1,0 +1,140 @@
+.policy_section {
+    margin: 0px 0;
+}
+
+.policy_carts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin: 10px 0;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.policy_cart {
+    background: #f1efef;
+    padding: 20px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.5s;
+
+}
+
+.why {
+    text-align: center;
+}
+
+.features_icon {
+    color: #c59d5f;
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+}
+
+.policy_cart:hover {
+    transform: translateY(-5px);
+    /* transform: scale(1.01); */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+}
+
+
+@media screen and (max-width:992px) {
+
+
+    .policy_carts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .policy_cart {
+        min-width: 370px;
+        padding: 20px 5px;
+        font-size: 1.4rem;
+    }
+
+    .features_icon {
+        font-size: 2.6rem;
+    }
+
+    .why {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+
+    .policy_carts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .policy_cart {
+        min-width: 280px;
+        padding: 20px 10px;
+        font-size: 1.4rem;
+    }
+
+    .features_icon {
+        font-size: 2.6rem;
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .title {
+        font-size: 0.3rem;
+    }
+
+    .policy_carts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .why {
+        font-size: 1rem;
+    }
+
+    .policy_cart {
+        padding: 20px 10px;
+        font-size: 1.1rem;
+    }
+
+    .features_icon {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .title {
+        font-size: 0.3rem;
+    }
+
+    .policy_carts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .policy_cart {
+        padding: 20px 10px;
+        font-size: 1.1rem;
+        min-width: 100px;
+    }
+
+    .features_icon {
+        font-size: 2.6rem;
+    }
+
+    .why {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+}

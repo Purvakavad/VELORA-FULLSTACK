@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* padding: 0 20px; */
+}
+
+.footer {
+  width: 100%;
+  background-color: #1A1A1A;
+
+}
+
+.footer_section {
+  width: 80vw;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  line-height: 35px;
+
+  gap: 120px;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.brand {
+  flex: 1;
+}
+
+.brand_name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.roller {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background: gray;
+}
+
+.accounts h5 {
+  font-size: 1.1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.icons a {
+  color: white;
+}
+
+.icon {
+  cursor: pointer;
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: rgb(45, 45, 236);
+
+  border: 2px solid rgb(45, 45, 236);
+
+}
+
+.footer_section ul {
+  margin-top: 20px;
+
+}
+
+.footer_section li {
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.footer_section li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: gray;
+}
+
+.footer_section li a:hover,
+.footer_section li a:hover {
+  color: rgb(45, 45, 236);
+}
+
+
+.links,
+.customer,
+.contact_head {
+  margin-bottom: 10px;
+}
+
+.footer_section h3 {
+  position: relative;
+}
+
+.footer_section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 50px;
+  height: 2px;
+  background-color: white;
+}
+
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.05rem;
+  line-height: 25px;
+}
+
+@media screen and (max-width:992px) {
+  .footer_section {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  /* .brand {
+    grid-column: 1 / -1;
+  } */
+
+
+}
+
+@media screen and (max-width:768px) {
+  .footer_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+
+
+}
+
+@media screen and (max-width:576px) {
+  .footer_section {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr);
+    gap: 25px;
+  }
+
+}

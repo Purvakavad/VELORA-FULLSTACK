@@ -1,0 +1,454 @@
+.aboute_page {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.main_container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.hero_section {
+    background-image: url('../../assets/about_banner.jpg');
+    /* object-fit: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.hero_contant {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero_contant h5 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.contents {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: auto;
+    color: #f5f5f5;
+
+}
+
+.story {
+    display: flex;
+    gap: 100px;
+    margin: 50px 0;
+    width: 80vw;
+    /* line-height: 35px; */
+}
+
+
+
+.right {
+    object-fit: cover;
+}
+
+.our_story {
+    color: #c59d5f;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.left h3 {
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+
+.about_img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contaxt {
+    line-height: 30px;
+    font-size: 1.1rem;
+
+}
+
+.connections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    line-height: 25px;
+    margin: 80px 0;
+}
+
+.icons {
+    color: #c59d5f;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+
+.connections div {
+    text-align: center;
+}
+
+.connections h3 {
+    font-size: 1.5rem;
+}
+
+.target {
+    margin: 40px auto;
+
+}
+
+.our_section {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.ourmission,
+.ourvision {
+    padding: 20px 120px 20px 120px;
+    background-color: #f1efef;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.ourmission:hover,
+.ourvision:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+}
+
+.ourmission h4,
+.ourvision h4 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.content {
+    line-height: 25px;
+}
+
+.shopBtn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    background-color: black;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+    border: none;
+
+}
+
+.shopBtn:hover {
+    background-color: rgb(61, 60, 60);
+    transform: scale(1.04);
+}
+
+.shopBtn a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:992px) {
+    .hero_section {
+        height: 55vh;
+        width: 100%;
+        background:
+            linear-gradient(90deg,
+                rgba(0, 0, 0, .55) 0%,
+                rgba(0, 0, 0, .35) 35%,
+                rgba(0, 0, 0, .15) 60%,
+                rgba(0, 0, 0, 0) 100%), url('../../assets/about_banner.jpg');
+        background-size: cover;
+    }
+
+    .hero_contant {
+        min-width: 300px;
+
+
+    }
+
+    .hero_contant h5 {
+        font-size: 3.3rem;
+        line-height: 1.4;
+
+    }
+
+    .contents {
+        line-height: 1.8;
+        font-size: 1.6rem;
+        margin: 25px 0;
+    }
+
+    .shopBtn a {
+        font-size: 2rem;
+    }
+
+    .our_story {
+        font-size: 1.8rem;
+    }
+
+    .left h3 {
+        font-size: 3rem;
+    }
+
+    .contaxt {
+        font-size: 1.7rem;
+        line-height: 1.7;
+    }
+
+    .story {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .about_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .connections {
+        margin: 30px 0;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        font-size: 2rem;
+    }
+
+    .connections .icons,
+    .connections h3 {
+        font-size: 3rem;
+
+    }
+
+    .connections div {
+        line-height: 1.3;
+    }
+
+    .our_section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ourmission,
+    .ourvision {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .hero_section {
+        height: 55vh;
+
+        background:
+            linear-gradient(90deg,
+                rgba(0, 0, 0, .55) 0%,
+                rgba(0, 0, 0, .35) 35%,
+                rgba(0, 0, 0, .15) 60%,
+                rgba(0, 0, 0, 0) 100%), url('../../assets/about_banner.jpg');
+        background-size: cover;
+    }
+
+    .hero_contant {
+        min-width: 300px;
+
+
+    }
+
+    .hero_contant h5 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+
+    }
+
+    .contents {
+        line-height: 1.5;
+        margin: 20px 0;
+    }
+
+    .story {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .about_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .connections {
+        margin: 30px 0;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .our_section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ourmission,
+    .ourvision {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .hero_section {
+        height: 55vh;
+
+        background:
+            linear-gradient(90deg,
+                rgba(0, 0, 0, .55) 0%,
+                rgba(0, 0, 0, .35) 35%,
+                rgba(0, 0, 0, .15) 60%,
+                rgba(0, 0, 0, 0) 100%), url('../../assets/about_banner.jpg');
+        background-size: cover;
+    }
+
+    .hero_contant {
+        min-width: 300px;
+
+
+    }
+
+    .hero_contant h5 {
+        font-size: 2rem;
+        line-height: 1.2;
+
+    }
+
+    .shopBtn a {
+        font-size: 1.4rem;
+    }
+
+    .contents {
+        line-height: 1.3;
+    }
+
+    .contents p {
+        font-size: 1.3rem;
+    }
+
+    .story {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .our_story {
+        font-size: 1.2rem;
+    }
+
+    .left h3 {
+        font-size: 2rem;
+    }
+
+    .contaxt p {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .about_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .connections {
+        margin: 30px 0;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        font-size: 1.2rem;
+    }
+
+    .connections h3 {
+        font-size: 1.6rem;
+    }
+
+    .our_section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ourmission,
+    .ourvision {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .hero_section {
+        height: 60vh;
+    }
+
+    .hero_contant h5 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .contents p {
+        font-size: 1.1rem;
+    }
+
+    .story {
+        gap: 8px;
+    }
+
+    .contents {
+        font-size: 0.9rem;
+    }
+
+    .shopBtn {
+        margin: 0;
+    }
+
+    .shopBtn a {
+        font-size: 1.1rem;
+    }
+
+    .left h3 {
+        margin: 8px auto;
+    }
+
+    .contaxt {
+        line-height: 1.4;
+    }
+}

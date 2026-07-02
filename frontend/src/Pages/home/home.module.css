@@ -1,0 +1,46 @@
+.home {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main_conatiner {
+    width: 80vw;
+    margin: auto;
+}
+
+@media screen and (max-width:1200px) {
+    .main_conatiner {
+        width: 90vw;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .main_conatiner {
+        width: 90vw;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .main_conatiner {
+        width: 95vw;
+    }
+
+}
+
+@media screen and (max-width:567px) {
+    .main_conatiner {
+        width: 90vw;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .main_conatiner {
+        width: 80vw;
+    }
+
+}

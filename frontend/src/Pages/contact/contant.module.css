@@ -1,0 +1,611 @@
+.contant_page {
+    padding: 0;
+    margin: 10vh 0;
+}
+
+.main_conatiner {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.hero_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    gap: 20px;
+    background: linear-gradient(to right,
+            rgba(248, 245, 240, 0.95),
+            rgba(248, 245, 240, 0.75),
+            rgba(248, 245, 240, 0));
+}
+
+.hero_contaxt {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+
+}
+
+.img {
+    flex: 1;
+}
+
+
+.title {
+    color: #c59d5f;
+    font-weight: 600;
+}
+
+.contaxt h3 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.contaxt p {
+    line-height: 25px;
+}
+
+.contaxt .Btn {
+    padding: 12px 30px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 1.05rem;
+
+}
+
+.contaxt .Btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.compny_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    /* flex-direction: column; */
+    /* background-color: red; */
+}
+
+
+.icons {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    color: #c59d5f;
+    border: 2px solid #c59d5f;
+    border-radius: 50%;
+}
+
+
+.contact_cart {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: #f1efef;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+
+}
+
+.contact_cart:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.contact_info {
+    justify-content: space-between;
+    width: 60%;
+}
+
+.userMsg {
+    flex: 1;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    line-height: 35px;
+    background: #fff;
+}
+
+.userMsg h2 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.userMsg h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    height: 3px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #c59d5f;
+
+}
+
+.sendBtn {
+    display: inline;
+}
+
+.userMsg label {
+    font-weight: 600;
+}
+
+.userMsg input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+
+}
+
+.inputGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.contact_info,
+.compny_map {
+    border: 2px solid rgb(180, 177, 177);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.compny_map {
+    height: 100%;
+    width: 40%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.compny_img {
+    width: 100%;
+    height: 60%;
+}
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+.map_container {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.mobileView {
+    display: none;
+}
+
+
+@media screen and (max-width:992px) {
+    .hero_section {
+        height: 60vh;
+        /* width: 100%; */
+        margin-top: 10vh;
+        position: relative;
+        display: block;
+        gap: 0;
+        background:
+            linear-gradient(rgba(255, 255, 255, .05),
+                rgba(0, 0, 0, .55)),
+            url("../../assets/contact_hero.jpg");
+
+        background-size: cover;
+        background-position: 70% center;
+    }
+
+    .hero_contaxt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    .contaxt .con_context {
+        line-height: 1.3;
+        font-size: 2rem;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .hero_contaxt h3 {
+        font-size: 3rem;
+        margin: 30px 0;
+
+    }
+
+    .contact_cart {
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    .title {
+        display: inline-block;
+        padding: 10px 25px;
+        background: #c9a96e;
+        border-radius: 20px;
+        color: white;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .contaxt .Btn {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        font-size: 1.8rem;
+
+    }
+
+    .contaxt .Btn:hover {
+        background: white;
+        color: black;
+        transform: scale(1.05) translateY(0);
+    }
+
+    .compny_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact_info {
+        width: 100%;
+
+    }
+
+    .compny_map {
+        width: 100%;
+        height: 40%;
+    }
+
+
+    .compny_img {
+        width: 100%;
+        height: 60%;
+    }
+
+
+    .map {
+        height: 40%;
+    }
+
+    .contact_cart {
+        min-width: 280px;
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero_section {
+        height: 60vh;
+        /* width: 100%; */
+        margin-top: 10vh;
+        position: relative;
+        display: block;
+        gap: 0;
+        background:
+            linear-gradient(rgba(255, 255, 255, .05),
+                rgba(0, 0, 0, .55)),
+            url("../../assets/contact_hero.jpg");
+
+        background-size: cover;
+        background-position: 70% center;
+    }
+
+    .hero_contaxt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        min-width: 500px;
+        text-align: center;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .con_context {
+        line-height: 2;
+        font-size: 1.5rem;
+    }
+
+
+    .img {
+        display: none;
+    }
+
+    .hero_contaxt h3 {
+        font-size: 2.8rem;
+        margin: 20px 0;
+
+    }
+
+    .contact_cart {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .title {
+        /* color: white; */
+        display: inline-block;
+        padding: 10px 18px;
+        background: #c9a96e;
+        border-radius: 20px;
+        color: white;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+
+    .contaxt .Btn {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        border-radius: 8px;
+
+    }
+
+    .contaxt .Btn:hover {
+        background: white;
+        color: black;
+        transform: scale(1.05) translateY(0);
+    }
+
+    .compny_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact_info {
+        width: 100%;
+
+    }
+
+    .compny_map {
+        width: 100%;
+        height: 30%;
+    }
+
+
+    .compny_img {
+        width: 100%;
+        height: 80%;
+    }
+
+
+    .map {
+        height: 20%;
+    }
+
+    .contact_cart {
+        min-width: 280px;
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hero_section {
+        height: 60vh;
+        margin-top: 10vh;
+        position: relative;
+        background-position: 70% center;
+        background:
+            linear-gradient(rgba(255, 255, 255, .05),
+                rgba(0, 0, 0, .55)),
+            url("../../assets/contact_hero.jpg");
+
+        background-size: cover;
+    }
+
+    .hero_contaxt {
+        /* background-image: url('../../assets/contact_hero.jpg'); */
+
+
+        color: white;
+        text-align: center;
+        min-width: 300px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .con_context {
+        display: none;
+    }
+
+    .mobileView {
+        display: block;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .hero_contaxt h3 {
+        font-size: 2rem;
+        margin: 10px 0;
+
+    }
+
+    .title {
+        /* color: white; */
+        display: inline-block;
+        padding: 6px 14px;
+        background: #c9a96e;
+        border-radius: 20px;
+        color: white;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .contaxt .Btn {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        border-radius: 8px;
+        font-size: 1.1rem;
+
+    }
+
+    .contaxt .Btn:hover {
+        background: white;
+        color: black;
+        transform: scale(1.05) translateY(0);
+    }
+
+    .sendBtn .Btn {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact_info {
+        width: 100%;
+    }
+
+    .compny_map {
+        width: 100%;
+        height: 30%;
+    }
+
+
+    .compny_img {
+        width: 100%;
+        height: 80%;
+    }
+
+
+    .map {
+        height: 20%;
+    }
+
+
+    .compny_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_cart {
+        min-width: 280px;
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .hero_section {
+        width: 100%;
+    }
+
+    .hero_contaxt h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+
+
+    }
+
+    .mobileView p {
+        line-height: 1.3;
+
+    }
+
+    .con_context {
+        display: none;
+    }
+
+    .mobileView {
+        display: block;
+        line-height: 1.1;
+    }
+
+    .contaxt .Btn {
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+
+    .compny_info {
+        gap: 0px;
+    }
+
+    .contact_cart {
+        max-width: 50px;
+        margin-bottom: 20px;
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+}
