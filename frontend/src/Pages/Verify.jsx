@@ -1,7 +1,6 @@
 import { useContext, useEffect } from "react"
 import { ShopContext } from "../Contaxt/ShopContext"
 import { useSearchParams } from 'react-router-dom'
-import { backedURI } from "../../../admin/src/App"
 import axios from 'axios'
 import { toast } from 'react-toastify'
 

@@ -6,7 +6,6 @@ import styles from './place-order.module.css'
 import { ShopContext } from '../../Contaxt/ShopContext'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import { backedURI } from '../../../../admin/src/App'
 function PlaceOrder() {
     const [method, setMethod] = useState('COD')
     const { navigate, cartItem, products, getTotalAmount, dilivery_fee, backendURL, token, setCartItem } = useContext(ShopContext)
