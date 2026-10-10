@@ -3,7 +3,8 @@ name: Deploy Velora to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -16,13 +17,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -33,22 +38,18 @@ jobs:
         working-directory: frontend
         run: npm ci
 
-      - name: Build
+      - name: Build website
         working-directory: frontend
         run: npm run build
 
-      - name: Upload artifact
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
