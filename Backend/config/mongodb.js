@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
-
 const connectDB = async () =>{
     try{
-    await mongoose.connect(`${process.env.MONGODB_URI}/e-commerce`)
+    await mongoose.connect(process.env.MONGODB_URI);
+    
+
     
     console.log("MongoDB Connected Successfully");
-
         
     mongoose.connection.on('connected',()=>{
         console.log('ConnectDB')
@@ -15,4 +15,6 @@ const connectDB = async () =>{
     }
 }
 export default connectDB
+
+
 
