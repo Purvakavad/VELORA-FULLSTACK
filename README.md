@@ -94,7 +94,9 @@ VELORA/
 
 ## 🌐 Live Demo
 
-Coming Soon...
+Client Website: [Visit VELORA](https://velora-fullstack-frontend.vercel.app/)
+
+Admin Panel:[ Visit Admin Panel](https://velora-fullstack-admin.vercel.app/)
 
 ---
 
