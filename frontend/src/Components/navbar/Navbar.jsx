@@ -59,7 +59,7 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li className={styles.navlink}>
-                        <button className={styles.admin_panel} onClick={() => window.location.href = "http://localhost:5174"}>Admin Panel</button>
+                        <button className={styles.admin_panel} onClick={() => window.location.href = "https://velora-fullstack-admin.vercel.app/"}>Admin Panel</button>
                     </li>
                 </ul>
                 <div className={styles.action}>
